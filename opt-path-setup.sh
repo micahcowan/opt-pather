@@ -88,7 +88,7 @@ path_current() {
 }
 
 _var_exists() {
-    eval [ "x\${${1}-__none}" != x__none ]
+    eval [ "\"x\${${1}-__none}\"" != x__none ]
 }
 
 _path_get_var() {
